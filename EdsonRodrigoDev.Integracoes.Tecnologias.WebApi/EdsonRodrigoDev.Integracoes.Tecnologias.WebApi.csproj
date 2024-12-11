@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7a2a38e0-4384-4e4b-a554-8fa4df6b29c5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.301" />
+    <PackageReference Include="MassTransit" Version="8.2.5" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.402.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EdsonRodrigoDev.Integracoes.Tecnologias.Application\EdsonRodrigoDev.Integracoes.Tecnologias.Application.csproj" />
+    <ProjectReference Include="..\EdsonRodrigoDev.Integracoes.Tecnologias.AwsServices\EdsonRodrigoDev.Integracoes.Tecnologias.AwsServices.csproj" />
+    <ProjectReference Include="..\EdsonRodrigoDev.Integracoes.Tecnologias.Domain\EdsonRodrigoDev.Integracoes.Tecnologias.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
